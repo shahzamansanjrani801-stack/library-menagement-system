@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Library Management System</h1>
+
+        <div class="form">
+
+            <label>Book Title</label>
+            <input type="text" id="bookTitle" placeholder="Enter Book Title">
+
+            <label>Author Name</label>
+            <input type="text" id="authorName" placeholder="Enter Author Name">
+
+            <label>Category / Genre</label>
+            <input type="text" id="category" placeholder="Enter Category">
+
+            <label>Book ID / ISBN</label>
+            <input type="text" id="bookId" placeholder="Enter Book ID">
+
+            <label>Publication Year</label>
+            <input type="number" id="year" placeholder="Enter Publication Year">
+
+            <label>Availability Status</label>
+            <select id="status">
+                <option value="Available">Available</option>
+                <option value="Issued">Issued</option>
+            </select>
+
+            <button id="addBtn">Add Book</button>
+
+        </div>
+
+        <h2>Book List</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Category</th>
+                    <th>Book ID</th>
+                    <th>Year</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+
+            </thead>
+
+            <tbody id="bookList">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
